@@ -1,0 +1,52 @@
+@use "variables";
+.plants {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  background-color: variables.$section-secondary-bg-color;
+  padding: 50px 7% 100px 7%;
+  margin-top: 126px;
+  p {
+    @include variables.shopAll;
+  }
+  h2 {
+    @include variables.mainText;
+
+    strong {
+      color: variables.$text-color;
+    }
+  }
+  .shop-all {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid variables.$text-color;
+  }
+  .plants-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 1.5rem;
+    div {
+      @include variables.bacgroundContainer;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+      h3 {
+        @include variables.plantsName;
+      }
+      p {
+        @include variables.priceParagraph;
+      }
+      button {
+        @include variables.greenButton;
+      }
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .plants-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
