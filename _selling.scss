@@ -1,0 +1,34 @@
+@use "variables";
+.selling {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-top: 147px;
+  p {
+    @include variables.shopAll;
+  }
+  h2 {
+    @include variables.mainText;
+
+    strong {
+      color: variables.$text-color;
+    }
+  }
+  .shop-all {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid variables.$text-color;
+  }
+  .selling-container {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    div {
+      @include variables.bacgroundContainer;
+      button {
+        @include variables.greenButton;
+      }
+    }
+  }
+}
