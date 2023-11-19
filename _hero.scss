@@ -1,0 +1,58 @@
+@use "variables";
+
+.hero {
+  background-image: url(./media/Heroplants.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: variables.$section-secondary-bg-color;
+  height: 710px;
+  text-align: center;
+
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    height: 710px;
+    width: 595px;
+    margin: 0 auto;
+    padding: 157px 26px 0 26px;
+    background: rgba(80, 128, 107, 0.2);
+    backdrop-filter: blur(20px);
+
+    h3 {
+      color: variables.$text-color;
+      text-align: center;
+      font-family: variables.$secondary-font-family;
+      font-size: 80px;
+      font-weight: 600;
+      letter-spacing: 2.4px;
+    }
+    p {
+      color: variables.$text-color;
+      text-align: center;
+      font-family: variables.$secondary-font-family;
+      font-size: 22px;
+      font-weight: 400;
+      line-height: normal;
+      padding: 0 58px 0 54px;
+      margin-bottom: 38px;
+    }
+    .hero-button {
+      align-self: center;
+      width: 264px;
+      height: 70px;
+      border-radius: 20px;
+      background: variables.$section-bg-color;
+      font-size: 22px;
+      font-weight: 600;
+      border: none;
+      padding: 24px 56px;
+    }
+  }
+
+  .hero-border {
+    height: 39px;
+    background-color: variables.$button-bg-color;
+    
+  }
+}
