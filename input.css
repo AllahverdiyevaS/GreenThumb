@@ -5,7 +5,6 @@
 }
 
 .content {
-  max-width: 1228px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -281,68 +280,152 @@
 }
 
 .testimonials {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 88px 11%;
   background-color: #e8edde;
 }
-.testimonials h2 {
+
+.header-font-style, .header-container ul li a, .header-container {
+  color: #fff;
+  font-size: 16px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: #50806b;
+  padding: 10px 143px 13px 86px;
+}
+.header-container .empty-block {
+  width: 130px;
+}
+.header-container h3 {
+  width: 100%;
+  text-align: center;
+}
+.header-container ul {
+  display: flex;
+  list-style: none;
+  gap: 23px;
+}
+.header-container ul li a {
+  text-decoration: none;
+}
+.header-container ul li a:first-of-type {
+  font-weight: 400;
+}
+.header-container ul li:last-of-type a {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 143px 8px 86px;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
+}
+.nav-bar nav ul {
+  display: flex;
+  align-items: center;
+  gap: 85px;
+  list-style: none;
+}
+.nav-bar nav ul a {
+  color: #000;
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 17px;
+  text-decoration: none;
+}
+.nav-bar h3 {
+  color: #50806b;
+  font-family: "Poppins";
+  font-size: 26px;
+  font-weight: 600;
+  letter-spacing: -0.6px;
+}
+.nav-bar h3 strong {
+  color: #000;
+}
+
+.search-busket {
+  display: flex;
+  align-items: center;
+}
+.search-busket .search {
+  display: flex;
+  height: 46px;
+}
+.search-busket .search::after {
+  content: "";
+  width: 1px;
+  background-color: #979797;
+  margin: 0 25px;
+}
+.search-busket .search input {
+  border: none;
+  width: 57px;
+}
+.search-busket .search img {
+  align-self: center;
+  width: 22px;
+  height: 22px;
+}
+
+.busket span {
+  font-size: 17px;
+}
+
+.hero {
+  background-image: url(./media/Heroplants.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #e8edde;
+  height: 710px;
+  text-align: center;
+}
+.hero .hero-content {
+  display: flex;
+  flex-direction: column;
+  height: 710px;
+  width: 595px;
+  margin: 0 auto;
+  padding: 157px 26px 0 26px;
+  background: rgba(80, 128, 107, 0.2);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+}
+.hero .hero-content h3 {
   color: #000;
   text-align: center;
   font-family: "Poppins";
-  font-size: 56px;
-  font-weight: 500;
-  line-height: 62px;
-  letter-spacing: -2.4px;
-  margin-bottom: 10px;
-}
-.testimonials p {
-  color: "Open Sans";
-  text-align: center;
-  font-family: "Open Sans";
-  font-size: 18px;
+  font-size: 80px;
   font-weight: 600;
-  line-height: 27.6px;
-  letter-spacing: 0.1px;
-  margin-bottom: 26px;
+  letter-spacing: 2.4px;
 }
-.testimonials .test_container {
-  display: flex;
-  gap: 30px;
-  align-items: center;
-  justify-content: center;
-  margin-top: 27px;
-}
-.testimonials .test_container div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  border-radius: 6px;
-  flex-wrap: wrap;
-  background: #fff;
-  box-shadow: 0px 4px 24px 0px rgba(139, 167, 178, 0.16);
-  width: 32%;
-  height: 290px;
-}
-.testimonials .test_container div h3 {
-  color: #1d293f;
+.hero .hero-content p {
+  color: #000;
   text-align: center;
   font-family: "Poppins";
   font-size: 22px;
-  font-weight: 500;
-  line-height: 28.8px;
-  margin-top: 21px;
-  margin-bottom: 6px;
-}
-.testimonials .test_container div p {
-  color: #7c8087;
-  text-align: center;
-  font-family: "Poppins";
-  font-size: 18px;
   font-weight: 400;
-  margin-bottom: 28px;
+  line-height: normal;
+  padding: 0 58px 0 54px;
+  margin-bottom: 38px;
+}
+.hero .hero-content .hero-button {
+  align-self: center;
+  width: 264px;
+  height: 70px;
+  border-radius: 20px;
+  background: #fff;
+  font-size: 22px;
+  font-weight: 600;
+  border: none;
+  padding: 24px 56px;
+}
+.hero .hero-border {
+  height: 39px;
+  background-color: #50806b;
 }/*# sourceMappingURL=input.css.map */
