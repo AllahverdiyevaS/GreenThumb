@@ -155,7 +155,7 @@
 }
 .plants .plants-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(282px, 1fr));
   gap: 1.5rem;
 }
 .plants .plants-container div {
@@ -201,11 +201,6 @@
   font-size: 20px;
 }
 
-@media screen and (max-width: 600px) {
-  .plants-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
 .deals {
   display: flex;
   flex-direction: column;
@@ -278,71 +273,4 @@
   font-family: "Open Sans";
   font-weight: 700;
   font-size: 20px;
-}
-
-.testimonials {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 88px 11%;
-  background-color: #e8edde;
-}
-.testimonials h2 {
-  color: #000;
-  text-align: center;
-  font-family: "Poppins";
-  font-size: 56px;
-  font-weight: 500;
-  line-height: 62px;
-  letter-spacing: -2.4px;
-  margin-bottom: 10px;
-}
-.testimonials p {
-  color: "Open Sans";
-  text-align: center;
-  font-family: "Open Sans";
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 27.6px;
-  letter-spacing: 0.1px;
-  margin-bottom: 26px;
-}
-.testimonials .test_container {
-  display: flex;
-  gap: 30px;
-  align-items: center;
-  justify-content: center;
-  margin-top: 27px;
-}
-.testimonials .test_container div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  border-radius: 6px;
-  flex-wrap: wrap;
-  background: #fff;
-  box-shadow: 0px 4px 24px 0px rgba(139, 167, 178, 0.16);
-  width: 32%;
-  height: 290px;
-}
-.testimonials .test_container div h3 {
-  color: #1d293f;
-  text-align: center;
-  font-family: "Poppins";
-  font-size: 22px;
-  font-weight: 500;
-  line-height: 28.8px;
-  margin-top: 21px;
-  margin-bottom: 6px;
-}
-.testimonials .test_container div p {
-  color: #7c8087;
-  text-align: center;
-  font-family: "Poppins";
-  font-size: 18px;
-  font-weight: 400;
-  margin-bottom: 28px;
 }/*# sourceMappingURL=input.css.map */

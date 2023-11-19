@@ -24,7 +24,8 @@
   }
   .plants-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    // grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(282px, 1fr));
 
     gap: 1.5rem;
     div {
@@ -45,8 +46,10 @@
     }
   }
 }
-@media screen and (max-width: 600px) {
-  .plants-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
+
+// @media screen and (min-width: 350px) and (max-width: 800px) {
+//   .plants-container {
+//     grid-template-columns: repeat(2, 1fr);
+//     gap: 1rem;
+//   }
+// }
