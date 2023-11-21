@@ -24,7 +24,7 @@
   }
   .plants-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(242px, 1fr));
 
     gap: 1.5rem;
     div {
@@ -40,13 +40,8 @@
         @include variables.priceParagraph;
       }
       button {
-        @include variables.greenButton;
+        @include variables.greenButton(242px);
       }
     }
-  }
-}
-@media screen and (max-width: 600px) {
-  .plants-container {
-    grid-template-columns: repeat(2, 1fr);
   }
 }

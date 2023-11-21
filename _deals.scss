@@ -38,7 +38,7 @@
         }
       }
       button {
-        @include variables.greenButton;
+        @include variables.greenButton(242px);
       }
     }
   }

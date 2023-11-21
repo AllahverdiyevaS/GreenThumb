@@ -9,9 +9,9 @@ $oldPrice-color: #d11f1f;
 $name-color: #7c8087;
 $comment-color: #1d293f;
 
-
-@mixin greenButton {
-  width: 100%;
+@mixin greenButton($width) {
+  width: $width;
+  height: 64px;
   border-radius: 16px;
   border: none;
   padding: 8px;
