@@ -280,6 +280,59 @@
 
 .testimonials {
   background-color: #e8edde;
+  text-align: center;
+  padding: 88px 0;
+}
+.testimonials h2 {
+  margin-bottom: 10px;
+  color: #000;
+  text-align: center;
+  font-family: "Poppins";
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: -2.4px;
+}
+.testimonials .subtitle {
+  color: #000;
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 0.1px;
+}
+.testimonials .testimonial-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 26px auto;
+  gap: 30px;
+}
+.testimonials .testimonial {
+  background: #fff;
+  width: 257px;
+  height: 290px;
+  border-radius: 6px;
+  box-shadow: 0px 4px 24px 0px rgba(139, 167, 178, 0.16);
+}
+.testimonials .testimonial-content .testimonial-name {
+  color: #7c8087;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  padding: 5px;
+}
+.testimonials .testimonial-content .testimonial-qoute {
+  font-style: italic;
+  color: #1d293f;
+  text-align: center;
+  font-family: "Poppins";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
 }
 
 .header-font-style, .header-container ul li a, .header-container {
@@ -375,8 +428,56 @@
   font-size: 17px;
 }
 
+.site-footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.site-footer .footer-nav {
+  display: flex;
+  gap: 16px;
+}
+.site-footer .footer-nav a {
+  color: black;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 12px 8px;
+  list-style: none;
+}
+.site-footer .footer-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-top: 24px;
+}
+.site-footer .footer-social img {
+  width: 20px;
+  height: 20px;
+}
+.site-footer .copyright {
+  background-color: #50806b;
+  width: 100%;
+  margin-top: 45px;
+}
+.site-footer .copyright p {
+  text-align: center;
+  font-family: "Public Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 15px 0 15px 0;
+}
+
 .hero {
-  background-image: url(./media/Heroplants.svg);
+  background-image: url(./media/bghero.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
