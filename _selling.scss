@@ -27,7 +27,7 @@
     div {
       @include variables.bacgroundContainer;
       button {
-        @include variables.greenButton;
+        @include variables.greenButton(344px);
       }
     }
   }
