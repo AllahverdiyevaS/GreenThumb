@@ -1,5 +1,64 @@
 @use "variables";
 
-.testimonials{
-    background-color: variables.$section-secondary-bg-color;
+.testimonials {
+  background-color: variables.$section-secondary-bg-color;
+  text-align: center;
+  padding: 88px 0;
+
+  h2 {
+    margin-bottom: 10px;
+    color: variables.$text-color;
+    text-align: center;
+    font-family: variables.$secondary-font-family;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: -2.4px;
+  }
+  .subtitle {
+    color: variables.$text-color;
+    text-align: center;
+    font-family: variables.$font-family;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0.1px;
+  }
+
+  .testimonial-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 26px auto;
+    gap: 30px;
+  }
+
+  .testimonial {
+    background: variables.$section-bg-color;
+    width: 257px;
+    height: 290px;
+    border-radius: 6px;
+    box-shadow: 0px 4px 24px 0px rgba(139, 167, 178, 0.16);
+  }
+  .testimonial-content {
+    .testimonial-name {
+      color: variables.$name-color;
+      text-align: center;
+      font-family: Poppins;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      padding: 5px;
+    }
+
+    .testimonial-qoute {
+      font-style: italic;
+      color: variables.$comment-color;
+      text-align: center;
+      font-family: variables.$secondary-font-family;
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 500;
+    }
+  }
 }
