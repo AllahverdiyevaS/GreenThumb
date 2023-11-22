@@ -8,15 +8,20 @@
   background-color: variables.$section-secondary-bg-color;
   height: 710px;
   text-align: center;
+  width: 100%;
   border-bottom: 39px solid variables.$button-bg-color;
 
   .hero-content {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 100%;
-    width: 595px;
+    // width: 595px;
+    width: clamp(300px, 50%, 595px);
     margin: 0 auto;
-    padding: 157px 26px 0 26px;
+    // padding: 157px 26px 0 26px;
+
     background: rgba(80, 128, 107, 0.2);
     backdrop-filter: blur(20px);
 
@@ -24,7 +29,8 @@
       color: variables.$text-color;
       text-align: center;
       font-family: variables.$secondary-font-family;
-      font-size: 80px;
+      // font-size: 80px;
+      font-size: clamp(20px, 5vw, 80px);
       font-weight: 600;
       letter-spacing: 2.4px;
     }
