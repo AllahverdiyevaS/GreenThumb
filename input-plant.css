@@ -1,0 +1,308 @@
+.deals {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  margin-top: 48px;
+  margin-bottom: 147px;
+}
+.deals h2 {
+  color: #50806b;
+  font-family: "Poppins";
+  font-size: clamp(46px, 5vw, 56px);
+  font-weight: 600;
+  line-height: 120%;
+  padding-bottom: 10px;
+  padding: 32px 0px;
+  border-bottom: 1px solid #000;
+}
+.deals h2 strong {
+  color: #000;
+}
+.deals .deals-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+.deals .deals-container div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  padding: 1.25rem;
+  gap: 16px;
+  flex: 1 0 0;
+  align-self: stretch;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0px 8px 23px 0px rgba(80, 107, 82, 0.13);
+}
+.deals .deals-container div h3 {
+  color: #343434;
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-weight: 700;
+  text-align: left;
+}
+.deals .deals-container div p .new-price {
+  color: #343434;
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-weight: 400;
+  text-align: left;
+}
+.deals .deals-container div p .old-price {
+  color: #d11f1f;
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 300;
+  text-decoration-line: line-through;
+}
+.deals .deals-container div button {
+  width: 242px;
+  height: 64px;
+  border-radius: 16px;
+  border: none;
+  padding: 8px;
+  background: #50806b;
+  box-shadow: 0px 8px 23px 0px rgba(80, 107, 82, 0.13);
+  color: #fff;
+  text-align: center;
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-size: 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.content {
+  max-width: 1228px;
+  margin-left: 7%;
+  margin-right: 7%;
+}
+
+.plant-container {
+  width: 100%;
+  height: 184px;
+  background: #e8edde;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  margin-left: 8%;
+  width: 100%;
+  gap: 6%;
+}
+.main-container .img {
+  display: grid;
+  width: 50%;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  justify-content: center;
+  align-items: center;
+  gap: 11px;
+}
+.main-container .img img {
+  width: 100%;
+  height: auto;
+}
+.main-container .img img:nth-child(1),
+.main-container .img img:nth-child(2) {
+  grid-row: 1;
+}
+.main-container .img img:nth-child(3),
+.main-container .img img:nth-child(4) {
+  grid-row: 2;
+}
+.main-container .info {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.main-container .info h2 {
+  margin-bottom: 6px;
+  color: #000;
+  font-family: Poppins;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 44px;
+  letter-spacing: -1.5px;
+}
+.main-container .info .price {
+  color: #000;
+  font-family: Open Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 144.444% */
+  letter-spacing: -0.3px;
+  margin-bottom: 23px;
+}
+.main-container .info .text {
+  color: var(--Primary, #0d0d0d);
+  font-family: Open Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 140% */
+  letter-spacing: -0.4px;
+  width: clamp(200px, 50%, 447px);
+  margin-bottom: 50px;
+}
+.main-container .info .text-size {
+  color: #000;
+  font-family: Open Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 144.444% */
+  letter-spacing: -0.3px;
+  width: clamp(200px, 50%, 447px);
+  margin-bottom: 11px;
+  opacity: 0.5;
+}
+.main-container .info .size {
+  display: flex;
+  gap: 8px;
+}
+.main-container .info .size p {
+  display: flex;
+  width: clamp(35px, 50%, 50px);
+  height: clamp(35px, 50%, 50px);
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0);
+  color: var(--Primary, #0d0d0d);
+  text-align: center;
+  font-family: Public Sans;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px; /* 137.5% */
+  letter-spacing: -0.4px;
+}
+.main-container .info .size p:last-child {
+  color: rgba(0, 0, 0, 0.5);
+  position: relative;
+  opacity: 0.5;
+}
+.main-container .info .size p:last-child::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.main-container .info div {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+.main-container .info div button {
+  align-self: self-end;
+  display: flex;
+  width: clamp(150px, 35vw, 350px);
+  height: clamp(30px, 10vh, 50px);
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background-color: Green;
+  border: none;
+  color: var(--colors-white, #fff);
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px; /* 137.5% */
+  letter-spacing: -0.4px;
+  text-transform: uppercase;
+}
+.main-container .info div .plus-minus {
+  display: flex;
+  padding: 12px 10px;
+  border-radius: 12px;
+  border: 1px solid #000;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.main-container .info div .plus-minus .minus,
+.main-container .info div .plus-minus .plus {
+  opacity: 0.5;
+  cursor: pointer;
+}
+.main-container .info div .plus-minus .value {
+  color: var(--Primary, #0d0d0d);
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px; /* 144.444% */
+  letter-spacing: -0.3px;
+}
+
+.quantity {
+  display: flex;
+  flex-direction: column;
+}
+.quantity p.text-content {
+  opacity: 0.5;
+  color: #000;
+  font-family: Open Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px; /* 144.444% */
+  letter-spacing: -0.3px;
+}
+
+.paragraph {
+  color: #000;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+  letter-spacing: -0.4px;
+  margin-top: 12px;
+  opacity: 0.5;
+}
+
+.back {
+  margin: 16px 0 90px 8%;
+  display: flex;
+  gap: 8px;
+}
+.back p a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.5);
+  font-family: Poppins;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+@media screen and (max-width: 768px) {
+  .header-container h3 {
+    display: none;
+  }
+  nav {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+}
+.size {
+  margin-bottom: 20px;
+}/*# sourceMappingURL=input-plant.css.map */

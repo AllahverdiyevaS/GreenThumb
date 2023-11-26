@@ -9,7 +9,9 @@
   display: flex;
   justify-content: space-between;
   background-color: variables.$button-bg-color;
-  padding: 10px 143px 13px 86px;
+  // padding: 10px 143px 13px 86px;
+  padding-top: 10px;
+  padding-bottom: 13px;
 
   .empty-block {
     width: 130px;
@@ -26,7 +28,6 @@
     display: flex;
     list-style: none;
     gap: 23px;
-
     li a {
       @extend .header-font-style;
       text-decoration: none;
@@ -55,7 +56,7 @@
   nav ul {
     display: flex;
     align-items: center;
-    gap: 15%;
+    gap: clamp(5vw, 10%, 85px);
     list-style: none;
 
     a {

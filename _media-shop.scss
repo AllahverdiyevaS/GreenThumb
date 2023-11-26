@@ -1,0 +1,23 @@
+@media (max-width: 720px) {
+  .menu-list {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "dropdown" "plants";
+    justify-content: center;
+    align-items: center;
+  }
+  .plants-shop {
+    grid-area: plants;
+    position: relative;
+  }
+  .dropdown {
+    grid-area: dropdown;
+    width: 100%;
+    width: 320px;
+    margin-bottom: 20px;
+  }
+  .sort {
+    display: none;
+  }
+}

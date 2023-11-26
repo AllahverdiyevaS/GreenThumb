@@ -1,6 +1,13 @@
 @use "variables";
 @media screen and (max-width: 768px) {
-  header .empty-block h3 {
+  .header-container h3 {
     display: none;
   }
+  nav {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+}
+.size {
+  margin-bottom: 20px;
 }

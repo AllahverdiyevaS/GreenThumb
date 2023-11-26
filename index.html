@@ -20,7 +20,7 @@
     <title>GreenThumb</title>
   </head>
   <body>
-    <header class="header">
+    <!-- <header class="header">
       <div class="header-container">
         <div class="empty-block"></div>
         <h3>FREE SHIPPING ON ALL FULL SUN PLANTS! FEB. 25–28.</h3>
@@ -50,7 +50,8 @@
           </div>
         </div>
       </div>
-    </header>
+    </header> -->
+    <header id="header"></header>
     <main>
       <section class="hero">
         <div class="hero-content">
@@ -64,7 +65,7 @@
       </section>
 
       <section class="content category">
-        <h2>Shop <strong>by Category</strong></h2>
+        <h2><a href="./shop.html">Shop</a> <strong>by Category</strong></h2>
 
         <div class="category-container">
           <div>
@@ -278,7 +279,8 @@
         </div>
       </section>
     </main>
-    <footer class="site-footer">
+    <footer id="footer"></footer>
+    <!-- <footer class="site-footer">
       <nav class="footer-nav">
         <a href="#">Products</a>
         <a href="#">Returns</a>
@@ -297,6 +299,23 @@
       <div class="copyright">
         <p>Copyright Green thumb. All Rights Reserved</p>
       </div>
-    </footer>
+    </footer> -->
+    <script>
+      window.onload = function () {
+        // Загрузка содержимого footer.html
+        fetch("footer.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("footer").innerHTML = data;
+          })
+          .catch((error) => console.error("Ошибка:", error));
+        fetch("header.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("header").innerHTML = data;
+          })
+          .catch((error) => console.error("Ошибка:", error));
+      };
+    </script>
   </body>
 </html>

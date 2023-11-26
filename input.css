@@ -26,6 +26,16 @@
   padding: 32px 0px;
   border-bottom: 1px solid #000;
 }
+.category h2 a {
+  text-decoration: none;
+  color: #50806b;
+  font-family: "Poppins";
+  font-size: clamp(46px, 5vw, 56px);
+  font-weight: 600;
+  line-height: 120%;
+  padding-bottom: 10px;
+  padding: 32px 0px;
+}
 .category h2 strong {
   color: #000;
 }
@@ -97,8 +107,8 @@
 .selling .selling-container div {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  text-align: left;
   padding: 1.25rem;
   gap: 16px;
   flex: 1 0 0;
@@ -166,8 +176,8 @@
 .plants .plants-container div {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  text-align: left;
   padding: 1.25rem;
   gap: 16px;
   flex: 1 0 0;
@@ -185,6 +195,7 @@
   font-family: "Open Sans";
   font-size: 20px;
   font-weight: 700;
+  text-align: left;
 }
 .plants .plants-container div p {
   color: #343434;
@@ -192,6 +203,7 @@
   font-family: "Open Sans";
   font-size: 20px;
   font-weight: 400;
+  text-align: left;
 }
 .plants .plants-container div button {
   width: 242px;
@@ -238,8 +250,8 @@
 .deals .deals-container div {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  text-align: left;
   padding: 1.25rem;
   gap: 16px;
   flex: 1 0 0;
@@ -253,6 +265,7 @@
   font-family: "Open Sans";
   font-size: 20px;
   font-weight: 700;
+  text-align: left;
 }
 .deals .deals-container div p .new-price {
   color: #343434;
@@ -260,6 +273,7 @@
   font-family: "Open Sans";
   font-size: 20px;
   font-weight: 400;
+  text-align: left;
 }
 .deals .deals-container div p .old-price {
   color: #d11f1f;
@@ -350,7 +364,8 @@
   display: flex;
   justify-content: space-between;
   background-color: #50806b;
-  padding: 10px 143px 13px 86px;
+  padding-top: 10px;
+  padding-bottom: 13px;
 }
 .header-container .empty-block {
   width: 130px;
@@ -387,7 +402,7 @@
 .nav-bar nav ul {
   display: flex;
   align-items: center;
-  gap: 15%;
+  gap: clamp(5vw, 10%, 85px);
   list-style: none;
 }
 .nav-bar nav ul a {
@@ -535,11 +550,17 @@
   font-size: 22px;
   font-weight: 600;
   border: none;
-  padding: 24px 56px;
 }
 
 @media screen and (max-width: 768px) {
-  header .empty-block h3 {
+  .header-container h3 {
     display: none;
   }
+  nav {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+}
+.size {
+  margin-bottom: 20px;
 }/*# sourceMappingURL=input.css.map */
