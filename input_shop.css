@@ -239,7 +239,6 @@ li.indoor-text a {
 
 .shop-container {
   display: flex;
-  align-items: center;
   width: 100%;
   height: 184px;
   background: #e8edde;
@@ -262,6 +261,7 @@ li.indoor-text a {
   font-family: Poppins;
   font-size: clamp(16px, 10vw, 22px);
   font-weight: 400;
+  margin-top: 42px;
 }
 
 .sort {
