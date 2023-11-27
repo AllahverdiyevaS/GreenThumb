@@ -20,6 +20,7 @@
     flex-wrap: wrap;
     div {
       @include variables.bacgroundContainer;
+
       h3 {
         @include variables.plantsName;
       }

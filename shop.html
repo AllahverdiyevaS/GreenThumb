@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./input_shop.css" />
+    <link rel="stylesheet" href="../fontawesome-free-6.4.2-web/css/all.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Shop</title>
+  </head>
+
+  <body>
+    <header id="header-shop"></header>
+    <main>
+      <section class="shop-container">
+        <h1>Shop</h1>
+        <p>Find the perfect plant for your space</p>
+      </section>
+
+      <section class="sort">
+        <div class="popular">
+          <p>
+            Sort By <strong>Popular</strong
+            ><img src="../media/down.svg" alt="" />
+          </p>
+        </div>
+        <p class="showing">Showing 1003 Products</p>
+      </section>
+      <section class="menu-list">
+        <div class="dropdown">
+          <div class="all-categories">
+            <ul>
+              <li>
+                <a href="#"
+                  ><img src="../media/right.svg" alt="" />All Categories</a
+                >
+                <p>Plants on Sale</p>
+              </li>
+
+              <li>
+                <a href="#"
+                  ><img src="../media/down.svg" alt="" />Indoor Plants</a
+                >
+
+                <ul class="indoor">
+                  <li class="indoor-text"><a href="">Alocasia</a></li>
+                  <li class="indoor-text"><a href="">Hoya</a></li>
+                  <li class="indoor-text"><a href="">Sansevieria</a></li>
+                  <li class="indoor-text"><a href="">Syngonium</a></li>
+                  <li class="show">
+                    <a href=""
+                      >Show more <img src="../media/down.svg" alt="" />
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="../media/right.svg" alt="" />Outdoor Plants</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="../media/right.svg" alt="" />Sun requirements</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="price">
+            <p>Price</p>
+            <img src="../media/down.svg" alt="" />
+          </div>
+          <div class="check">
+            <h4>Include</h4>
+            <label class="label-check">
+              <input type="checkbox" class="input-check" checked />
+              <span class="checkbox"></span>
+              Planter
+            </label>
+            <label class="label-check">
+              <input type="checkbox" class="input-check" checked /><span
+                class="checkbox"
+              ></span
+              >Flowers
+            </label>
+            <label class="label-check">
+              <input type="checkbox" class="input-check" checked /><span
+                class="checkbox"
+              ></span
+              >Care
+            </label>
+            <label class="label-check">
+              <input type="checkbox" class="input-check" checked /><span
+                class="checkbox"
+              ></span
+              >Heat Pack
+            </label>
+          </div>
+        </div>
+        <div class="plants-shop">
+          <div>
+            <img src="../media/marbleQueen.svg" alt="marbleQueen" />
+            <h3>Marble Queen</h3>
+            <p>$ 350</p>
+            <button class="go-topage">
+              <a href="./plant_page.html">Buy</a>
+            </button>
+          </div>
+          <div>
+            <img src="../media/NeonPothos.svg" alt="NeonPothos" />
+            <h3>Neon Pothos</h3>
+            <p>$ 350</p>
+            <button>Buy</button>
+          </div>
+          <div>
+            <img src="../media/rayii.svg" alt="SyngoniumRayii" />
+            <h3>Syngonium Rayii</h3>
+            <p>$ 350</p>
+            <button>Buy</button>
+          </div>
+          <div>
+            <img src="../media/cactus.svg" alt="PeruvianCactus" />
+            <h3>Peruvian Cactus</h3>
+            <p>$ 350</p>
+            <button>Buy</button>
+          </div>
+          <div>
+            <img src="../media/pineapple.svg" alt="Pineapple" />
+            <h3>Pineapple</h3>
+            <p>$ 350</p>
+            <button>Buy</button>
+          </div>
+          <div>
+            <img src="../media/milkTree.svg" alt="AfricanMilkTree" />
+            <h3>African Milk Tree</h3>
+            <p>$ 350</p>
+            <button>Buy</button>
+          </div>
+          <div>
+            <img src="../media/pothos2.svg" alt="pothos" />
+            <h3>Pothos</h3>
+            <p>$ 350</p>
+            <button>Buy</button>
+          </div>
+          <div>
+            <img src="../media/chinese.svg" alt="Chinese Evergreen" />
+            <h3>Chinese Evergreen</h3>
+            <p>$ 350</p>
+            <button>Buy</button>
+          </div>
+          <div>
+            <img src="../media/rayii.svg" alt="SyngoniumRayii" />
+            <h3>Syngonium Rayii</h3>
+            <p>$ 350</p>
+            <button>Buy</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="footer-shop"></footer>
+    <script>
+      window.onload = function () {
+        fetch("footer.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("footer-shop").innerHTML = data;
+          })
+          .catch((error) => console.error("Ошибка:", error));
+        fetch("header.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("header-shop").innerHTML = data;
+          })
+          .catch((error) => console.error("Ошибка:", error));
+      };
+    </script>
+  </body>
+</html>

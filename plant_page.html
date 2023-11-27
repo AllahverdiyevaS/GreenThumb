@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./input-plant.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header id="header-plant"></header>
+    <main>
+      <section class="plant-container">
+        <h1>Plant</h1>
+        <p>Marble Queen Pothos</p>
+      </section>
+      <div class="back">
+        <img src="./media/left.svg" alt="" />
+        <p><a href="./shop.html">Back to Search</a></p>
+      </div>
+      <section class="main-container">
+        <div class="img">
+          <img src="./media/plant.svg" alt="" />
+          <img src="./media/plant-light.svg" alt="" />
+          <img src="./media/plant-hangt.svg" alt="" />
+          <img src="./media/plant-last.svg" alt="" />
+        </div>
+        <div class="info">
+          <h2>Marble Queen Pothos</h2>
+          <p class="price">$350</p>
+          <p class="text">
+            Marble queen pothos is a popular houseplant that is known for its
+            beautiful foliage. It is a relatively easy plant to care for, making
+            it a good choice for beginners.
+          </p>
+          <p class="text-size">Size</p>
+          <div class="size">
+            <p>S</p>
+            <p>M</p>
+            <p>L</p>
+          </div>
+          <div>
+            <button>Add to Cart</button>
+            <div class="quantity">
+              <p class="text-content">Quantity</p>
+              <div class="plus-minus">
+                <p class="minus">-</p>
+                <p class="value">0</p>
+                <p class="plus">+</p>
+              </div>
+            </div>
+          </div>
+
+          <p class="paragraph">Free standard shipping</p>
+        </div>
+      </section>
+      <section class="content deals">
+        <h2>You’ll love<strong> these too...</strong></h2>
+        <div class="deals-container">
+          <div>
+            <img src="./media/string.svg" alt="StringofHearts" />
+
+            <h3>String of Hearts</h3>
+            <p>
+              <span class="new-price">$ 350</span>
+              <span class="old-price">$ 450</span>
+            </p>
+
+            <button>Buy</button>
+          </div>
+          <div>
+            <img src="./media/red.svg" alt="RedSecretAlocasia" />
+
+            <h3>Red Secret Alocasia</h3>
+            <p>
+              <span class="new-price">$ 350</span>
+              <span class="old-price">$ 450</span>
+            </p>
+
+            <button>Buy</button>
+          </div>
+          <div>
+            <img src="./media/jewel.svg" alt="JewelAlocasia" />
+
+            <h3>Jewel Alocasia</h3>
+            <p>
+              <span class="new-price">$ 350</span>
+              <span class="old-price">$ 450</span>
+            </p>
+
+            <button>Buy</button>
+          </div>
+          <div>
+            <img src="./media/hoya.svg" alt="HoyaRetusa" />
+
+            <h3>Hoya Retusa</h3>
+            <p>
+              <span class="new-price">$ 350</span>
+              <span class="old-price">$ 450</span>
+            </p>
+
+            <button>Buy</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="footer-plant"></footer>
+    <script>
+      window.onload = function () {
+        fetch("footer.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("footer-plant").innerHTML = data;
+          })
+          .catch((error) => console.error("Ошибка:", error));
+        fetch("header.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("header-plant").innerHTML = data;
+          })
+          .catch((error) => console.error("Ошибка:", error));
+      };
+      const valueDiv = document.querySelector(".value");
+      const plusButton = document.querySelector(".plus");
+      const minusButton = document.querySelector(".minus");
+
+      let value = 0;
+
+      function updateValue(newValue) {
+        value = newValue;
+        valueDiv.textContent = value;
+      }
+
+      plusButton.addEventListener("click", () => {
+        updateValue(value + 1);
+      });
+
+      minusButton.addEventListener("click", () => {
+        if (value > 0) {
+          updateValue(value - 1);
+        }
+      });
+    </script>
+  </body>
+</html>

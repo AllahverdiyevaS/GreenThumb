@@ -18,16 +18,19 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     border-bottom: 1px solid variables.$text-color;
   }
   .selling-container {
     display: flex;
     gap: 1.5rem;
     flex-wrap: wrap;
+    justify-content: center;
+
     div {
       @include variables.bacgroundContainer;
       button {
-        @include variables.greenButton(344px);
+        @include variables.greenButton(clamp(200px, 50%, 344px));
       }
     }
   }

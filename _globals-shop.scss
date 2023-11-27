@@ -1,0 +1,29 @@
+@use "variables-shop";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.nav-social {
+  background-color: #e8edde;
+  width: 100%;
+  height: 239px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 480px) {
+  .nav-social {
+    flex-direction: column;
+    align-items: center;
+    height: 320px;
+  }
+}

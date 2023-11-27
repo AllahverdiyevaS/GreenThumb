@@ -6,8 +6,8 @@
 
 .content {
   max-width: 1228px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 7%;
+  margin-right: 7%;
 }
 
 .category {
@@ -19,12 +19,22 @@
 .category h2 {
   color: #50806b;
   font-family: "Poppins";
-  font-size: 56px;
+  font-size: clamp(46px, 5vw, 56px);
   font-weight: 600;
   line-height: 120%;
   padding-bottom: 10px;
   padding: 32px 0px;
   border-bottom: 1px solid #000;
+}
+.category h2 a {
+  text-decoration: none;
+  color: #50806b;
+  font-family: "Poppins";
+  font-size: clamp(46px, 5vw, 56px);
+  font-weight: 600;
+  line-height: 120%;
+  padding-bottom: 10px;
+  padding: 32px 0px;
 }
 .category h2 strong {
   color: #000;
@@ -68,11 +78,12 @@
   font-weight: 400;
   line-height: 21.7px;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 .selling h2 {
   color: #50806b;
   font-family: "Poppins";
-  font-size: 56px;
+  font-size: clamp(46px, 5vw, 56px);
   font-weight: 600;
   line-height: 120%;
   padding-bottom: 10px;
@@ -85,17 +96,20 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   border-bottom: 1px solid #000;
 }
 .selling .selling-container {
   display: flex;
   gap: 1.5rem;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .selling .selling-container div {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  justify-content: center;
+  text-align: left;
   padding: 1.25rem;
   gap: 16px;
   flex: 1 0 0;
@@ -105,7 +119,7 @@
   box-shadow: 0px 8px 23px 0px rgba(80, 107, 82, 0.13);
 }
 .selling .selling-container div button {
-  width: 344px;
+  width: clamp(200px, 50%, 344px);
   height: 64px;
   border-radius: 16px;
   border: none;
@@ -135,11 +149,12 @@
   font-weight: 400;
   line-height: 21.7px;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 .plants h2 {
   color: #50806b;
   font-family: "Poppins";
-  font-size: 56px;
+  font-size: clamp(46px, 5vw, 56px);
   font-weight: 600;
   line-height: 120%;
   padding-bottom: 10px;
@@ -152,6 +167,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   border-bottom: 1px solid #000;
 }
 .plants .plants-container {
@@ -162,7 +178,8 @@
 .plants .plants-container div {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  justify-content: center;
+  text-align: left;
   padding: 1.25rem;
   gap: 16px;
   flex: 1 0 0;
@@ -180,6 +197,7 @@
   font-family: "Open Sans";
   font-size: 20px;
   font-weight: 700;
+  text-align: left;
 }
 .plants .plants-container div p {
   color: #343434;
@@ -187,9 +205,10 @@
   font-family: "Open Sans";
   font-size: 20px;
   font-weight: 400;
+  text-align: left;
 }
 .plants .plants-container div button {
-  width: 242px;
+  width: clamp(150px, 40vw, 242px);
   height: 64px;
   border-radius: 16px;
   border: none;
@@ -213,7 +232,7 @@
 .deals h2 {
   color: #50806b;
   font-family: "Poppins";
-  font-size: 56px;
+  font-size: clamp(46px, 5vw, 56px);
   font-weight: 600;
   line-height: 120%;
   padding-bottom: 10px;
@@ -233,7 +252,8 @@
 .deals .deals-container div {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  justify-content: center;
+  text-align: left;
   padding: 1.25rem;
   gap: 16px;
   flex: 1 0 0;
@@ -247,6 +267,7 @@
   font-family: "Open Sans";
   font-size: 20px;
   font-weight: 700;
+  text-align: left;
 }
 .deals .deals-container div p .new-price {
   color: #343434;
@@ -254,6 +275,7 @@
   font-family: "Open Sans";
   font-size: 20px;
   font-weight: 400;
+  text-align: left;
 }
 .deals .deals-container div p .old-price {
   color: #d11f1f;
@@ -344,7 +366,8 @@
   display: flex;
   justify-content: space-between;
   background-color: #50806b;
-  padding: 10px 143px 13px 86px;
+  padding-top: 10px;
+  padding-bottom: 13px;
 }
 .header-container .empty-block {
   flex: 1 1 auto;
@@ -363,6 +386,7 @@
   text-decoration: none;
 }
 .header-container ul li a:first-of-type {
+  margin-right: 23px;
   font-weight: 400;
 }
 .header-container ul li:last-of-type a {
@@ -373,6 +397,7 @@
 .nav-bar {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding: 8px 143px 8px 86px;
   padding: 8px 10%;
@@ -382,7 +407,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 85px;
+  gap: clamp(5vw, 10%, 85px);
   list-style: none;
 }
 .nav-bar nav ul a {
@@ -391,6 +416,7 @@
   font-weight: 400;
   font-size: 17px;
   text-decoration: none;
+  white-space: nowrap;
 }
 .nav-bar h3 {
   color: #50806b;
@@ -469,7 +495,6 @@
 .site-footer .footer-nav {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
 }
 .site-footer .footer-nav a {
   color: black;
@@ -496,9 +521,9 @@
 .site-footer .copyright {
   background-color: #50806b;
   width: 100%;
-  margin-top: 45px;
 }
 .site-footer .copyright p {
+  color: #E8EDDE;
   text-align: center;
   font-family: "Public Sans", sans-serif;
   font-size: clamp(12px, 2vw, 16px);
@@ -521,13 +546,12 @@
   .footer-nav {
     flex-direction: column;
     align-items: center;
-    gap: 8px;
   }
 }
 .hero {
   background-image: url(./media/bghero.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: center bottom;
   background-repeat: no-repeat;
   background-color: #e8edde;
   height: 710px;
@@ -537,10 +561,11 @@
 .hero .hero-content {
   display: flex;
   flex-direction: column;
-  height: 710px;
-  width: 595px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: clamp(300px, 50%, 595px);
   margin: 0 auto;
-  padding: 157px 26px 0 26px;
   background: rgba(80, 128, 107, 0.2);
   -webkit-backdrop-filter: blur(20px);
           backdrop-filter: blur(20px);
@@ -549,7 +574,7 @@
   color: #000;
   text-align: center;
   font-family: "Poppins";
-  font-size: 80px;
+  font-size: clamp(20px, 5vw, 80px);
   font-weight: 600;
   letter-spacing: 2.4px;
 }
@@ -572,7 +597,6 @@
   font-size: 22px;
   font-weight: 600;
   border: none;
-  padding: 24px 56px;
 }
 .hero .hero-border {
   height: 39px;
@@ -588,5 +612,28 @@
   }
   .hero .hero-content p {
     font-size: 18px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header-container h3 {
+    display: none;
+  }
+  nav {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .content {
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+  .shop-all {
+    padding-bottom: 15px;
+  }
+  .plants-container {
+    align-items: center;
+    justify-content: center;
+  }
+  .selling-container {
+    padding-left: 25px;
   }
 }/*# sourceMappingURL=input.css.map */

@@ -1,0 +1,175 @@
+@use "variables-shop";
+
+.dropdown ul {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  // justify-content: center;
+  // align-items: center;
+
+  li {
+    list-style: none;
+
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
+// ul.outdoor {
+//   display: none;
+// }
+ul.indoor {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  // align-items: flex-start;
+}
+
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  width: 248px;
+  justify-content: center;
+  align-items: center;
+  // grid-area: dropdown;
+
+  .price {
+    border-radius: 10px;
+    border: 1px solid #e3e5e5;
+    background: variables-shop.$section-b-color;
+    box-shadow: 0px 8px 23px 0px rgba(80, 107, 82, 0.13);
+    height: 58px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    p {
+      color: #343434;
+      font-family: Open Sans;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 150%;
+      letter-spacing: 0.55px;
+    }
+  }
+  .all-categories {
+    width: 100%;
+    height: 420px;
+    border-radius: 10px;
+    border: 1px solid #e3e5e5;
+    background: variables-shop.$section-b-color;
+    box-shadow: 0px 8px 23px 0px rgba(80, 107, 82, 0.13);
+
+    ul {
+      padding-left: 1.2rem;
+      padding-top: 18px;
+      li:first-child a {
+        color: variables-shop.$paragraph-color;
+        font-family: variables-shop.$first-font-family;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 150%;
+        letter-spacing: 0.55px;
+        img {
+          margin-right: 8px;
+        }
+      }
+      li:not(:first-child) a {
+        color: variables-shop.$paragraph-color;
+        font-family: variables-shop.$first-font-family;
+        font-size: 16px;
+        // font-weight: 600;
+        line-height: 150%;
+        letter-spacing: 0.352px;
+        margin-right: 8px;
+        img {
+          margin-right: 8px;
+        }
+      }
+    }
+  }
+}
+
+// li.indoor-text a {
+//   color: variables-shop.$paragraph-color;
+//   font-family: variables-shop.$first-font-family;
+//   font-size: 16px;
+//   font-weight: 400;
+//   line-height: 150%;
+//   letter-spacing: 0.352px;
+// }
+
+p {
+  color: rgba(52, 52, 52, 0.6);
+  font-family: variables-shop.$first-font-family;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 143%;
+  letter-spacing: 0.252px;
+  margin-top: 1px;
+  margin-left: 7px;
+}
+.check {
+  height: 187px;
+  width: 100%;
+  border-radius: 10px;
+  background: variables-shop.$section-b-color;
+  box-shadow: 0px 8px 23px 0px rgba(80, 107, 82, 0.13);
+  display: flex;
+  flex-direction: column;
+  padding-left: 1.5rem;
+  justify-content: center;
+  gap: 4px;
+  h4 {
+    margin-left: 0.7rem;
+    margin-bottom: 8px;
+  }
+  .input-check {
+    appearance: none;
+    position: absolute;
+  }
+  .checkbox {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-image: url(../media/empty-check.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: -1.2em;
+  }
+  .label-check {
+    margin-left: 1.5rem;
+    color: variables-shop.$paragraph-color;
+    font-family: variables-shop.$first-font-family;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0.352px;
+  }
+}
+.input-check:checked + .checkbox {
+  background-image: url(../media/checkbox-circle.svg);
+}
+.show a {
+  color: variables-shop.$paragraph-color;
+  text-align: center;
+  font-family: variables-shop.$first-font-family;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.75px;
+  text-transform: capitalize;
+
+  img {
+    margin-left: 7px;
+  }
+}
+li.indoor-text a {
+  color: variables-shop.$paragraph-color;
+  font-family: variables-shop.$first-font-family;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.352px;
+}

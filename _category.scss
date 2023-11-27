@@ -8,6 +8,10 @@
   h2 {
     @include variables.mainText;
     border-bottom: 1px solid variables.$text-color;
+    a {
+      text-decoration: none;
+      @include variables.mainText;
+    }
 
     strong {
       color: variables.$text-color;

@@ -9,7 +9,8 @@
   display: flex;
   justify-content: space-between;
   background-color: variables.$button-bg-color;
-  padding: 10px 143px 13px 86px;
+  padding-top: 10px;
+  padding-bottom: 13px;
 
   .empty-block {
     flex: 1 1 auto;
@@ -27,14 +28,12 @@
     display: flex;
     list-style: none;
     gap: 23px;
-    // margin-right: 7%;
-
     li a {
       @extend .header-font-style;
       text-decoration: none;
 
       &:first-of-type {
-        // margin-right: 23px;
+        margin-right: 23px;
         font-weight: 400;
       }
     }
@@ -47,11 +46,9 @@
 }
 
 .nav-bar {
-  // display: grid;
-  // grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  // align-items: center;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding: 8px 143px 8px 86px;
   padding: 8px 10%;
@@ -61,7 +58,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: 85px;
+    gap: clamp(5vw, 10%, 85px);
     list-style: none;
 
     a {
@@ -70,6 +67,7 @@
       font-weight: 400;
       font-size: 17px;
       text-decoration: none;
+      white-space: nowrap;
     }
   }
 

@@ -1,0 +1,37 @@
+@use "variables-shop";
+
+.menu-list {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  align-items: start;
+  margin: 166px 7% 0 7%;
+  margin-top: clamp(50px, 10vw, 166px);
+  margin-bottom: 121px;
+}
+.plants-shop {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  justify-content: center;
+  align-items: center;
+  //   grid-template-rows: repeat(3, 1fr);
+  grid-gap: 24px 22px;
+  div {
+    @include variables-shop.bgContainer;
+    img {
+      width: 100%;
+    }
+    h3 {
+      @include variables-shop.plantsName;
+    }
+    p {
+      @include variables-shop.priceText;
+    }
+    button {
+      @include variables-shop.button;
+    }
+  }
+}
+.go-topage a {
+  text-decoration: none;
+  @include variables-shop.button;
+}
