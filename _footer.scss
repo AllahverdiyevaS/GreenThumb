@@ -41,7 +41,8 @@
   .copyright {
     background-color: variables.$button-bg-color;
     width: 100%;
-    margin-top: 45px;
+    // padding-top: 45px;
+    // height: 55px;
     p {
       text-align: center;
       font-family: variables.$secondary-footer-font;
@@ -53,4 +54,12 @@
       margin: 15px 0 15px 0;
     }
   }
+}
+.nav-social {
+  width: 100%;
+  height: 239px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }

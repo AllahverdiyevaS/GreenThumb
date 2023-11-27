@@ -1,15 +1,3 @@
-@use "variables-shop";
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-main {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
 .nav-social {
   background-color: #e8edde;
   width: 100%;
@@ -18,4 +6,9 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }

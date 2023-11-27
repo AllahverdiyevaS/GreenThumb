@@ -96,6 +96,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   border-bottom: 1px solid #000;
 }
 .selling .selling-container {
@@ -118,7 +119,7 @@
   box-shadow: 0px 8px 23px 0px rgba(80, 107, 82, 0.13);
 }
 .selling .selling-container div button {
-  width: 344px;
+  width: clamp(200px, 50%, 344px);
   height: 64px;
   border-radius: 16px;
   border: none;
@@ -166,6 +167,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   border-bottom: 1px solid #000;
 }
 .plants .plants-container {
@@ -206,7 +208,7 @@
   text-align: left;
 }
 .plants .plants-container div button {
-  width: 242px;
+  width: clamp(150px, 40vw, 242px);
   height: 64px;
   border-radius: 16px;
   border: none;
@@ -487,7 +489,6 @@
 .site-footer .copyright {
   background-color: #50806b;
   width: 100%;
-  margin-top: 45px;
 }
 .site-footer .copyright p {
   text-align: center;
@@ -498,6 +499,15 @@
   letter-spacing: 2px;
   text-transform: uppercase;
   margin: 15px 0 15px 0;
+}
+
+.nav-social {
+  width: 100%;
+  height: 239px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero {
@@ -560,7 +570,18 @@
     margin-top: 5px;
     margin-bottom: 5px;
   }
-}
-.size {
-  margin-bottom: 20px;
+  .content {
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+  .shop-all {
+    padding-bottom: 15px;
+  }
+  .plants-container {
+    align-items: center;
+    justify-content: center;
+  }
+  .selling-container {
+    padding-left: 25px;
+  }
 }/*# sourceMappingURL=input.css.map */
