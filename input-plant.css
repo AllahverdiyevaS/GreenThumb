@@ -98,8 +98,6 @@
   padding-right: 8%;
   padding-top: 26px;
   margin-top: 122px;
-  flex-wrap: wrap;
-  overflow: hidden;
 }
 .list-text .watering {
   display: flex;
@@ -107,6 +105,8 @@
   gap: 22px;
   padding-bottom: 84px;
   width: clamp(200px, 60%, 874px);
+  border-left: 1px solid black;
+  padding-left: 30px;
 }
 .list-text .watering h3 {
   color: #343434;
@@ -248,6 +248,7 @@ ul {
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   justify-content: center;
   align-items: center;
+  gap: 11px 11px;
   gap: 11px;
 }
 .main-container .img img {
@@ -263,7 +264,6 @@ ul {
   grid-row: 2;
 }
 .main-container .info {
-  width: 50%;
   display: flex;
   flex-direction: column;
 }
@@ -444,5 +444,11 @@ ul {
   }
   .content {
     padding-left: 12px;
+  }
+  .list-text .watering {
+    display: none;
+  }
+  .drop-list {
+    padding-left: 30%;
   }
 }/*# sourceMappingURL=input-plant.css.map */
