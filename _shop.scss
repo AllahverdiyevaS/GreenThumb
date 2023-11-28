@@ -11,7 +11,7 @@
   margin-bottom: 48px;
   h1 {
     color: #000;
-    font-family: Poppins;
+    font-family: variables-shop.$second-font-family;
     font-size: clamp(50px, 10vw, 80px);
     font-weight: 400;
     line-height: 80px;
@@ -20,7 +20,7 @@
   }
   p {
     color: #000;
-    font-family: Poppins;
+    font-family: variables-shop.$second-font-family;
     font-size: clamp(16px, 10vw, 22px);
     font-weight: 400;
     margin-top: 42px;

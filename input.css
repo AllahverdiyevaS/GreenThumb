@@ -570,9 +570,8 @@
     margin-top: 5px;
     margin-bottom: 5px;
   }
-  .content {
-    margin-left: 12px;
-    margin-right: 12px;
+  .content .shop-all {
+    padding-left: 12px;
   }
   .shop-all {
     padding-bottom: 15px;
@@ -583,5 +582,8 @@
   }
   .selling-container {
     padding-left: 25px;
+  }
+  .plants .shop-all {
+    padding-left: 12px;
   }
 }/*# sourceMappingURL=input.css.map */
