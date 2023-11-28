@@ -262,6 +262,7 @@ li.indoor-text a {
   font-size: clamp(16px, 10vw, 22px);
   font-weight: 400;
   margin-top: 42px;
+  margin-bottom: 20px;
 }
 
 .sort {
@@ -309,6 +310,13 @@ main {
   align-items: center;
 }
 
+@media (max-width: 480px) {
+  .nav-social {
+    flex-direction: column;
+    align-items: center;
+    height: 320px;
+  }
+}
 @media (max-width: 720px) {
   .menu-list {
     margin-top: 50px;
@@ -325,7 +333,6 @@ main {
   .dropdown {
     grid-area: dropdown;
     width: 100%;
-    width: 320px;
     margin-bottom: 20px;
   }
   .all-categories {

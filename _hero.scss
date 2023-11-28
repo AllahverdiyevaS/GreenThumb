@@ -8,8 +8,7 @@
   background-color: variables.$section-secondary-bg-color;
   height: 710px;
   text-align: center;
-  width: 100%;
-  border-bottom: 39px solid variables.$button-bg-color;
+  position: relative;
 
   .hero-content {
     display: flex;
@@ -54,6 +53,25 @@
       font-weight: 600;
       border: none;
       // padding: 24px 56px;
+    }
+  }
+
+  .hero-border {
+    height: 39px;
+    background-color: variables.$button-bg-color;
+  }
+}
+
+@media screen and  (max-width: 595px) {
+   .hero .hero-content {
+    width: 100vw;
+
+    h3 {
+    font-size: 40px;
+    }
+
+    p {
+      font-size: 18px;
     }
   }
 }
