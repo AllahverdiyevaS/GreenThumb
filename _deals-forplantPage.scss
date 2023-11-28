@@ -1,0 +1,164 @@
+@use "variables-plant";
+.deals {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  margin-top: 128px;
+  margin-bottom: 120px;
+  h2 {
+    @include variables-plant.mainText;
+    border-bottom: 1px solid variables-plant.$text-color;
+    strong {
+      color: variables-plant.$text-color;
+    }
+  }
+  .deals-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    div {
+      @include variables-plant.bacgroundContainer;
+
+      h3 {
+        @include variables-plant.plantsName;
+      }
+
+      p {
+        .new-price {
+          @include variables-plant.priceParagraph;
+        }
+        .old-price {
+          color: variables-plant.$oldPrice-color;
+          text-align: center;
+          font-family: variables-plant.$font-family;
+          font-size: 16px;
+          font-weight: 300;
+          text-decoration-line: line-through;
+        }
+      }
+      button {
+        @include variables-plant.greenButton(242px);
+      }
+    }
+  }
+}
+.drop-list ul {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.content {
+  max-width: 1228px;
+  margin-left: 8%;
+  margin-right: 8%;
+}
+.list-text {
+  display: flex;
+  gap: 20px;
+  background-color: #e8edde;
+  width: 100%;
+  height: clamp(420px, 50vh, 100vh);
+
+  padding-left: 8%;
+  padding-right: 8%;
+  padding-top: 26px;
+  margin-top: 122px;
+  flex-wrap: wrap;
+
+  .watering {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    padding-bottom: 84px;
+    width: clamp(200px, 60%, 874px);
+    h3 {
+      color: #343434;
+      font-family: Poppins;
+      font-size: clamp(24px, 5vw, 36px);
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+    p {
+      color: var(--Primary, #0d0d0d);
+      font-family: Open Sans;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 28px; /* 140% */
+      letter-spacing: -0.4px;
+      // width: clamp(200px, 60%, 874px);
+    }
+  }
+  .drop-list {
+    display: flex;
+    flex-direction: column;
+
+    ul {
+      // padding-left: 1.2rem;
+      // padding-top: 18px;
+      li:first-child a {
+        color: #000;
+        font-family: "Open Sans";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        letter-spacing: 0.55px;
+        white-space: nowrap;
+        img {
+          margin-right: 15px;
+        }
+      }
+      li:not(:first-child) a {
+        color: #343434;
+        font-family: "Open Sans";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 150%; /* 24px */
+        letter-spacing: 0.352px;
+        white-space: nowrap;
+        img {
+          margin-right: 12px;
+        }
+      }
+    }
+  }
+}
+.watering-indoor a {
+  color: #000;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 24px */
+  letter-spacing: 0.352px;
+  text-transform: capitalize;
+}
+.indoor-text a {
+  color: #000;
+  font-family: Open Sans;
+  font-size: 16px;
+
+  font-weight: 600;
+  line-height: 150%; /* 24px */
+  letter-spacing: 0.352px;
+  text-transform: capitalize;
+}
+.indoor {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-left: 2rem;
+}
+.drop-list::after {
+  &::after {
+    content: "";
+    width: 1px;
+    background-color: #979797;
+    margin: 0 25px;
+  }
+}

@@ -1,0 +1,61 @@
+$button-bg-color: #50806b;
+$section-bg-color: #fff;
+$secondary-font-family: "Poppins";
+$font-family: "Open Sans";
+$paragraph-color: #343434;
+$text-color: #000;
+$oldPrice-color: #d11f1f;
+
+@mixin greenButton($width) {
+  width: $width;
+  height: 64px;
+  border-radius: 16px;
+  border: none;
+  padding: 8px;
+  background: $button-bg-color;
+  box-shadow: 0px 8px 23px 0px rgba(80, 107, 82, 0.13);
+  color: $section-bg-color;
+  text-align: center;
+  font-family: $font-family;
+  font-weight: 700;
+  font-size: 20px;
+}
+@mixin bacgroundContainer {
+  display: flex;
+  flex-direction: column;
+  // align-items: center;
+  justify-content: center;
+  text-align: left;
+  padding: 1.25rem;
+  gap: 16px;
+  flex: 1 0 0;
+  align-self: stretch;
+  border-radius: 16px;
+  background: $section-bg-color;
+  box-shadow: 0px 8px 23px 0px rgba(80, 107, 82, 0.13);
+}
+@mixin mainText {
+  color: $button-bg-color;
+  font-family: $secondary-font-family;
+  // font-size: 56px;
+  font-size: clamp(46px, 5vw, 56px);
+  font-weight: 600;
+  line-height: 120%;
+  padding-bottom: 10px;
+  padding: 32px 0px;
+}
+@mixin plantsName {
+  color: $paragraph-color;
+  font-family: $font-family;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: left;
+}
+@mixin priceParagraph {
+  color: $paragraph-color;
+  text-align: center;
+  font-family: $font-family;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: left;
+}

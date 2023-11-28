@@ -2,4 +2,10 @@
   .size {
     margin-bottom: 20px;
   }
+  .plant-container {
+    height: clamp(184px, 50vh, 100%);
+  }
+  .content {
+    padding-left: 12px;
+  }
 }
