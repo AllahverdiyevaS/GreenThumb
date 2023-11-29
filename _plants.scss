@@ -42,7 +42,7 @@
         @include variables.priceParagraph;
       }
       button {
-        @include variables.greenButton(clamp(150px, 40vw, 242px));
+        @include variables.greenButton(242px);
       }
     }
   }

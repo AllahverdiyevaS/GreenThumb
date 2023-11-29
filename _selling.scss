@@ -30,7 +30,7 @@
     div {
       @include variables.bacgroundContainer;
       button {
-        @include variables.greenButton(clamp(200px, 50%, 344px));
+        @include variables.greenButton(344px);
       }
     }
   }
